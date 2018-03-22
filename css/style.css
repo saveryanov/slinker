@@ -1,0 +1,315 @@
+html, body, a, p, div, input, select {
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 14pt;
+}
+
+input, textarea, select {
+	padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #5091ec;
+    border-radius: 3px;
+	box-sizing: border-box;
+	
+}
+
+div, span {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #EBEBEB;
+}
+
+a:visited,
+a {
+	color: #1b55d0;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #1b90d0;
+}
+
+.bold {
+	font-weight: bold;
+}
+.green {
+	color: #00AA00;
+}
+.blue {
+	color: #0000AA;
+}
+.orange {
+	color: #cb8700;
+}
+.red {
+	color: #AA0000;
+}
+.grey {
+	color: #909090;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.small {
+	font-size: 0.9em;
+}
+.smaller {
+	font-size: 0.8em;
+}
+
+h1 {
+	text-align: center;
+}
+
+#content  {
+	width: 100%;
+	margin: 1em auto;
+	overflow-x: hidden;
+	max-width: 980px;
+}
+
+#header {
+	position: relative;
+	box-sizing: border-box;
+	color: #FFF;
+	
+	background-color: #333;
+	width: 100%;
+	padding: 10px 5%;
+	
+    box-shadow: 0 1px 5px #333;
+}
+
+#header .logo {
+	margin: 0 20px 0 0;
+    width: 350px;
+    display: inline-block;
+}
+
+#header .logoimg {
+	display: inline-block;
+    float: left;
+    height: 50px;
+    margin-right: 5px;
+    width: 50px;
+	background: url('/schat/imgs/logo.png') no-repeat transparent;
+	background-size: cover;
+}
+
+#header .sitename {
+	font-size: 24pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+    display: inline-block;
+}
+
+#header .header-block {
+	display: inline-block;
+}
+
+#header .usermenu {
+	float: right;
+}
+
+#header .usermenu .user-name {
+	color: #ffe46a;
+}
+
+#header .usermenu .user-logout {
+    padding: 13px 0;
+    display: inline-block;
+}
+#header .usermenu .user-logout a{
+	color: #909090;
+    text-decoration: none;
+    font-size: 0.9em;
+	padding: 0;
+	
+}
+
+#header .usermenu .user-logout:hover a{
+	color: #F0F0F0;
+    text-shadow: 1px 1px 3px #909090;
+    font-size: 0.9em;
+}
+
+
+.topmenu {
+	background-color: #1274a9;
+	color: #EEE;
+    box-shadow: 0 1px 5px #999;
+}
+
+.topmenu .topmenu-buttons {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.topmenu .topmenu-buttons .topmenu-button {
+	color: #EEE;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+
+.topmenu .topmenu-buttons .topmenu-button a {
+	color: #EEE;
+	display: inline-block;
+	text-decoration: none;
+	background-color: transparent;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-bottom: 3px solid transparent;
+}
+
+.topmenu .topmenu-buttons .topmenu-button a:hover {
+	color: #fff;
+	background-color: #1b90d0;
+	border-color: #1b90d0;
+}
+.topmenu .topmenu-buttons .topmenu-button a:active {
+	background-color: #0e6696;
+	border-color: #0e6696;
+}
+
+
+.topmenu .topmenu-buttons .topmenu-button.active a{
+	border-color: #ffcf00;
+}
+
+
+ 
+/* Landscape phones and down */
+@media (max-width: 900px) {
+	html, body, a, p, div, input {
+		font-size: 12pt;
+	}
+
+		
+	#header .logo {
+		margin: 0 10px 0 0;
+		width: 130px;
+	}
+
+	#header .logoimg {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		height: 40px;
+		width: 40px;
+	}
+
+	#header .sitename {
+		font-size: 18pt;
+		line-height: 50px;
+	}
+	
+}
+
+@media screen and (max-width:768px){
+	html, body, a, p, div, input {
+		font-size: 10pt;
+	}
+}
+
+
+/* Таблицы */
+
+table {
+	background-color: #fff;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+table th,
+table td {
+	padding: 0.5em;
+    border: 0;
+    box-sizing: border-box;
+}
+
+table .sort-btns {
+	display: block;
+	width: 100%;
+}
+
+table th {
+	background-color: #ffb840;
+	color: #EEE;
+	border-bottom: 3px solid #963920;
+}
+
+table td {
+	background-color: #fff;
+	color: #333;
+	border-bottom: 1px solid #ffa000;
+}
+
+/* Формы */
+
+
+.form-label {
+	width: 250px;
+	vertical-align: top;
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.form-button input,
+.submit-button {
+	padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #5091ec;
+    border-radius: 3px;
+	box-sizing: border-box;
+	
+	font-size: 1em;
+	
+	cursor: pointer;
+	border: 0;
+    background-color: #ff7100;
+    color: #eee;
+    text-shadow: 0px 1px 2px #670000;	
+}
+
+
+.form-button input:hover,
+.submit-button:hover {
+    color: #fff;
+	background-color: #ff900f;
+}
+
+
+.form-button input:active,
+.submit-button:active {
+	background-color: #ef8000;
+}
+
+
+.form-button input:disabled,
+.submit-button:disabled {
+	background-color: #555;
+}
+
+form table,
+form table td,
+form table thead,
+form table tbody,
+form table tr{
+	font-size: 1em;
+	font-weight: normal;
+	border: 0;
+	background: transparent;
+}
+
+form table td input {
+	width: 100%;
+}
+

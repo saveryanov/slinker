@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>SLinker</name>
+    <code>slinker</code>
+	<version>0.9</version>
+	<author>Sergey Averyanov</author>
+	<link>http://src-group.ru</link>
+	
+	<file path="admin/view/template/common/footer.tpl">
+		<operation>
+			<search><![CDATA[</body>]]></search>
+			<add position="before"><![CDATA[<script type="text/javascript" src="/slinker/js/textareaprocessor.js"></script>]]>
+			</add>
+		</operation>
+	</file>
+	<file path="admin/view/template/common/header.tpl">
+		<operation>
+			<search><![CDATA[</head>]]></search>
+			<add position="before"><![CDATA[<link href="/slinker/css/textareaprocessor.css" rel="stylesheet" />]]>
+			</add>
+		</operation>
+	</file>
+</modification>
